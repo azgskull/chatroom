@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.message {
+  flex: 1;
+  height: 40px;
+  padding: 10px;
+  resize: none;
+
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+
+.button {
+  flex: 0;
+  height: 40px;
+}

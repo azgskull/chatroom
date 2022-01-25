@@ -1,0 +1,41 @@
+.header {
+  flex: 0 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+
+  background: #dedede;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #ccc;
+  padding: 0 20px;
+  width: 300px;
+}
+
+.menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-overflow: ellipsis;
+}
+
+.menu li.welcome {
+  display: flex;
+  flex-direction: column;
+}

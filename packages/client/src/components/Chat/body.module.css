@@ -1,0 +1,14 @@
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.scrollWrapper {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}

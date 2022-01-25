@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mine .info {
+  margin-left: auto;
+  flex-direction: row-reverse;
+}
+
+.username {
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.creationDate {
+  font-size: 12px;
+  color: #555;
+}
+
+.message {
+  margin: 0;
+  font-size: 18px;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.mine .message {
+  margin-left: auto;
+}

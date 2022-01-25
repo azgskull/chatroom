@@ -1,0 +1,17 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server:dev" : "npm run dev --workspace=server",
+    "client:dev" : "npm run dev --workspace=client"
+  },
+  "keywords": [],
+  "author": "azgskull",
+  "license": "ISC",
+  "workspaces": [
+    "packages\\server",
+    "packages\\client"
+  ]
+}
