@@ -1,0 +1,17 @@
+.roomName {
+  height: 35px;
+  background: #eee;
+  color: #333;
+  border: 0;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.error {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: rgb(247, 100, 100);
+  margin: 5px 0 0;
+}
