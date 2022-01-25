@@ -8,7 +8,7 @@ export const configureFetchClient = (navigate) => {
 };
 
 export const fetchClient = axios.create({
-  baseURL: "http://localhost:80",
+  baseURL: process.env.REACT_APP_BASE_URL,
 });
 
 fetchClient.interceptors.request.use((config) => {
