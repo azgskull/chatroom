@@ -9,6 +9,8 @@ import usersRouter from "./modules/user/usersRouters.js";
 
 import socketHandler from "./modules/sockets/socketHandler.js";
 
+import path from "path";
+
 const app = express();
 const server = http.createServer(app);
 
@@ -23,12 +25,15 @@ app.use(express.urlencoded({ extended: false }));
 app.use(usersMiddlewares.detectRequestUser);
 
 // Routers
-app.use("/users", usersRouter);
-app.use("/rooms", roomsRouter);
+app.use("/api/users", usersRouter);
+app.use("/api/rooms", roomsRouter);
 
-//
-app.use((req, res) => {
-  res.status(404).send("<h1>Chatroom api :)</h1><p>Root not found</p>");
-});
+if (!process.env.NODE_ENV) {
+  // serve react
+  app.use(express.static("../client/build"));
+  app.use("/*", (req, res) => {
+    res.sendFile(path.resolve("../client/build/index.html"));
+  });
+}
 
-server.listen(80);
+server.listen(process.env.PORT || 80);

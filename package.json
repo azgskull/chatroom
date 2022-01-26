@@ -2,10 +2,12 @@
   "name": "chatroom",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./packages/server/server.js",
   "scripts": {
-    "server:dev" : "npm run dev --workspace=server",
-    "client:dev" : "npm run dev --workspace=client"
+    "server:dev": "npm run dev --workspace=server",
+    "client:dev": "npm run dev --workspace=client",
+    "build": "npm run build --workspace=client",
+    "start": "npm run start --workspace=server"
   },
   "keywords": [],
   "author": "azgskull",
