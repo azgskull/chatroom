@@ -1,7 +1,7 @@
 import { appendChat } from "../state/room";
 import { userState } from "../state/user";
 
-const socket = new window.WebSocket("ws://localhost");
+const socket = new window.WebSocket(process.env.REACT_APP_WS);
 
 export const registerUser = () => {
   const user = userState.get();
