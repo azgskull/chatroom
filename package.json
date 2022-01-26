@@ -6,7 +6,6 @@
   "scripts": {
     "server:dev": "npm run dev --workspace=server",
     "client:dev": "npm run dev --workspace=client",
-    "build": "npm run build --workspace=client",
     "start": "npm run start --workspace=server",
     "heroku-postbuild": "npm run build --workspace=client"
   },
