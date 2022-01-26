@@ -28,7 +28,7 @@ app.use(usersMiddlewares.detectRequestUser);
 app.use("/api/users", usersRouter);
 app.use("/api/rooms", roomsRouter);
 
-if (!process.env.NODE_ENV) {
+if (process.env.NODE_ENV !== "dev") {
   // serve react
   app.use(express.static("../client/build"));
   app.use("/*", (req, res) => {

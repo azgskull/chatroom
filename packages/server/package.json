@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "set NODE_ENV=true&&nodemon server.js",
+    "dev": "set NODE_ENV=dev&&nodemon server.js",
     "start": "node server.js"
   },
   "author": "",
