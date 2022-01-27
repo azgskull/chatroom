@@ -4,12 +4,11 @@
   "description": "",
   "main": "server.js",
   "type": "module",
+  "private": true,
   "scripts": {
     "dev": "set NODE_ENV=dev&&nodemon server.js",
     "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.2",
