@@ -12,12 +12,6 @@ https://azg-chatroom-websocket.herokuapp.com/
 ---
 
 # Run in local
-Create a .env.local in packages/client and add the following keys
-
-```env
-REACT_APP_BASE_URL = http://localhost/api
-REACT_APP_WS = ws://localhost
-```
 
 Open two consoles for each commande:
 
@@ -31,7 +25,7 @@ yarn start client:dev
 
 # Run in production
 
-You need to build react, and use server to serve the front and the api (not an ideal solution)
+You need to build react, and use server to serve the front and the api (not an ideal solution just for heroku)
 
 ```cmd
 yarn heroku-postbuild
