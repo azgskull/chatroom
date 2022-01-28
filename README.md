@@ -16,11 +16,11 @@ https://azg-chatroom-websocket.herokuapp.com/
 Open two consoles for each commande:
 
 ```cmd
-yarn start server:dev
+yarn server:dev
 ```
 
 ```cmd
-yarn start client:dev
+yarn client:dev
 ```
 
 # Run in production
